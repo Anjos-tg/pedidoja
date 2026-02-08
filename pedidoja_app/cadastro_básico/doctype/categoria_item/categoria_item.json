@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-08 20:03:47.962359",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "description",
+  "unit_of_measurement",
+  "standard_price",
+  "discounted_price"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Produto",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item_code.description",
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Descri\u00e7\u00e3o do Item",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.unit_of_measurement",
+   "fieldname": "unit_of_measurement",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Unidade de Medida",
+   "options": "Unidade de Medida",
+   "read_only": 1
+  },
+  {
+   "fieldname": "standard_price",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Pre\u00e7o",
+   "precision": "2"
+  },
+  {
+   "fieldname": "discounted_price",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Pre\u00e7o com Desconto",
+   "precision": "2"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-08 20:09:19.239651",
+ "modified_by": "Administrator",
+ "module": "Cadastro B\u00e1sico",
+ "name": "Categoria Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
